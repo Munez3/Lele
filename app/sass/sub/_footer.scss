@@ -1,0 +1,52 @@
+.footer{
+  padding: 40px 0 20px;
+  background-color: $blueDark;
+  color: #fff;
+
+  &__logo{
+    margin-bottom: 23px;
+  }
+
+  &__icon{
+    margin-bottom: 15px;
+    padding: 10px 0 10px 50px;
+    background: no-repeat left center;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  &__map{
+    height: 230px;
+    background-color: #ccc;
+    @include media($breakpointMd){
+      margin-top: -80px;
+    }
+  }
+
+  &--contact{
+    padding: 8px 0;
+  }
+}
+
+.credits{
+  margin-top: 10px;
+  font-size: 10px;
+  @include media($breakpointMd){
+    margin: 0;
+  }
+
+  &__blue{
+    margin-left: 10px;
+    padding-left: 10px;
+    display: inline-block;
+    border-left: 1px solid $blue;
+  }
+
+  &__author{
+    vertical-align: middle;
+  }
+
+  &__logo{
+    width: 118px;
+  }
+}

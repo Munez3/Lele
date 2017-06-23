@@ -1,0 +1,173 @@
+.map{
+  height: 400px;
+  background-color: #ccc;
+  &--home{
+    height: 250px;
+    @include media($breakpointLg){
+      height: 100%;
+    }
+  }
+}
+
+.mtb-70{
+  margin-top: 25px;
+  margin-bottom: 25px;
+  @include media($breakpointMd){
+    margin-top: 50px;
+    margin-bottom: 50px;
+    &--navbar{
+      margin-top: 106px;
+    }
+  }
+  @include media($breakpointLg){
+    margin-top: 70px;
+    margin-bottom: 70px;
+
+    &--navbar{
+      margin-top: 126px;
+    }
+  }
+}
+.ptb-70{
+  padding-top: 25px;
+  padding-bottom: 25px;
+  @include media($breakpointMd){
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  @include media($breakpointLg){
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
+
+.btn{
+  padding: 15px 25px;
+  display: inline-block;
+  background-color: $red;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 800;
+  text-transform: uppercase;
+  transition: 200ms;
+
+  &:hover{
+    background-color: darken($red, 20);
+  }
+}
+
+
+.section{
+
+  &__gray-box{
+    height: 200px;
+  }
+
+  @include media($breakpointMd){
+    &__gray-box{
+      height: auto;
+    }
+
+    &--gray{
+      position: relative;
+      padding-bottom: 40px;
+      &:before{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        display: block;
+        width: 50%;
+        height: 244px;
+        background-color: $gray;
+        z-index: -1;
+      }
+    }
+
+    &--gray-left:before{
+      right: 50%;
+    }
+    &--gray-left &__gray-box{
+      padding-right: 40px;
+    }
+    &--gray-right:before{
+      left: 50%;
+    }
+    &--gray-right &__gray-box{
+      padding-left: 40px;
+    }
+  }
+
+  &__col-6{
+    margin-bottom: 20px;
+    @include media($breakpointMd){
+      width: calc(50% - 15px);
+      margin-right: 30px;
+      &.flexbox--nd{
+        margin-right: 0;
+        margin-left: 30px;
+      }
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.vertical-line{
+  @include media($breakpointMd){
+    padding-left: 20px;
+    border-left: 1px solid $gray;
+  }
+}
+
+.banner{
+  margin-top: 62px;
+  padding: 20px 0;
+  background-color: $blue;
+  color: #fff;
+  @include media($breakpointMd){
+    margin-top: 0;
+    padding: 40px 0;
+  }
+}
+
+.reference{
+  background-color: #fff;
+
+  &--blue{
+    background-color: $blue;
+  }
+
+  &--home &__icon{
+    margin: 0;
+  }
+
+  &__wrapper{
+    justify-content: space-around;
+  }
+
+  &__icon{
+    display: none;
+    @include media($breakpointLg){
+      margin: 0 auto;
+      display: block;
+      width: 152px;
+      height: 160px;
+      background: no-repeat center;
+    }
+  }
+
+  &__btn{
+    margin: 15px 0;
+  }
+}
+
+.dot{
+  margin: 0 10px;
+  display: inline-block;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: darken($gray, 20);
+  vertical-align: middle;
+}
