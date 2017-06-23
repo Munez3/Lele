@@ -1,299 +1,185 @@
 <!DOCTYPE html>
 <html lang="pl">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parking Uśmiechu</title>
-    <link href="stylesheets/screen.css"rel="stylesheet">
-    <script src="https://use.typekit.net/apy0zxp.js"></script>
-    <script>try{Typekit.load({ async: true });}catch(e){}</script>
-  </head>
-  <body>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Lele Productions</title>
+      <link href="stylesheets/screen.css"rel="stylesheet">
+   </head>
+   <body>
+      <header class="header flexbox" style="background-image: url('assets/1_home/slider.jpg');">
+         <h1 class="header__slogan text-white text-center">
+            <span class="header__small-text">Hi, we are</span>
+            <img src="images/logo.png" alt="Lele">
+            crossmedia production
+         </h1>
+      </header>
 
-    <header class="header">
-      <div class="container row">
-        <div class="logo">
-          <a href="index.html">
-            <img src="images/logo.png" alt="Parking Uśmiechu" class="image">
-          </a>
-        </div>
-
-        <div class="burger">
-          <div class="burger__bar"></div>
-        </div>
-
-        <div class="meta row">
-          <ul class="row lang dot-between">
-            <li><a href="">PL</a></li>
-            <li><a href="">EN</a></li>
-            <li><a href="">DE</a></li>
-            <li><a href="">UA</a></li>
-          </ul>
-          <div class="meta__info row">
-            <div class="meta__info-item">
-              <span class="meta__info-icon" style="background-image: url('images/phone.png');"></span>
-              +48 666 555 444
+      <div class="navbar">
+         <div class="container row navbar__container">
+            <nav class="row">
+               <ul class="nav nav--left row">
+                  <li><a href="latest.html">Latest Productions</a></li>
+                  <li><a href="preview.html">Preview</a></li>
+                  <li><a href="awards.html">Awards</a></li>
+               </ul>
+               <a href="index.html" class="navbar__logo">
+                  <img src="images/logo_black.png" alt="Lele Productions">
+               </a>
+               <ul class="nav nav--right row">
+                  <li><a href="about.html">About Lele</a></li>
+                  <li><a href="cooperation.html">Cooperation</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+               </ul>
+            </nav>
+            <div class="lang">
+               Pl
             </div>
-            <div class="meta__info-item">
-              <span class="meta__info-icon" style="background-image: url('images/mail.png');"></span>
-              parking@usmiechu.pl
-            </div>
-            <div class="meta__info-item">
-              <span class="meta__info-icon" style="background-image: url('images/nonstop.png');"></span>
-              Otwarte 24/7
-            </div>
-          </div>
-        </div>
+         </div>
       </div>
-    </header>
 
-    <div class="slider text-center" style="background-image: url('assets/1_home/slider.jpg')">
-      <div class="container">
-        <h1>Parking Lotnisko Balice</h1>
-        <p class="slider__caption">Profesjonalnie <span class="text-bold">z uśmiechem!</span></p>
-      </div>
-    </div>
-
-    <nav class="navbar">
-      <div class="container">
-        <ul class="row nav dot-between flexbox-md">
-          <li><a href="about.html">O parkingu</a></li>
-          <li><a href="price.html">Cennik</a></li>
-          <li><a href="place.html">Dojazd</a></li>
-          <li><a href="faq.html">Warto wiedzieć</a></li>
-          <li><a href="contact.html">Kontakt</a></li>
-        </ul>
-      </div>
-    </nav>
-
-    <div class="container row mtb-70 mtb-70--navbar stretchbox-md">
-      <div class="col-md-5">
-        <h2>Zarezerwuj miejsce</h2>
-        <form action="" class="form">
-          <div class="row">
-            <div class="col-sm-7 form__col form__pad">
-              <label>
-                Data przyjazdu
-                <input type="text">
-              </label>
-            </div>
-            <div class="col-sm-5 form__col">
-              <label>
-                Godzina
-                <input type="text">
-              </label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-7 form__col form__pad">
-              <label>
-                Data odjazdu
-                <input type="text">
-              </label>
-            </div>
-            <div class="col-sm-5 form__col">
-              <label>
-                Godzina
-                <input type="text">
-              </label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-sm-4 form__col">
-              <label>
-                Ilość aut
-                <input type="text">
-              </label>
-            </div>
-            <div class="col-sm-5 form__col form__col--btn">
-              <button class="btn uppercase">Sprawdź cenę</button>
-            </div>
-          </div>
-        </form>
-      </div>
-      <div class="col-md-7 vertical-line price price--small">
-        <h2>Cennik</h2>
-        <ol class="price__list row flexbox-sm">
-          <li class="price__item">
-            1 dzień
-            <div class="price__value">10 zł</div>
-          </li>
-          <li class="price__item">
-            2 dni
-            <div class="price__value">10 zł</div>
-          </li>
-          <li class="price__item">
-            3 dni
-            <div class="price__value">10 zł</div>
-          </li>
-          <li class="price__item">
-            4 dni
-            <div class="price__value">10 zł</div>
-          </li>
-          <li class="price__item">
-            5 dni
-            <div class="price__value">10 zł</div>
-          </li>
-          <li class="price__item">
-            6 dni
-            <div class="price__value">10 zł</div>
-          </li>
-          <li class="price__item">
-            7 dni
-            <div class="price__value">10 zł</div>
-          </li>
-          <li class="price__item">
-            14 dni
-            <div class="price__value">10 zł</div>
-          </li>
-          <li class="price__item price__item--wide">
-            21 dni
-            <div class="price__value">10 zł</div>
-          </li>
-        </ol>
-        <div class="price__item price__item--full">
-          <div class="price__value"><span class="text-normal">Miesięczny abonament: </span>129zł</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container row mtb-70 stretchbox-md">
-      <div class="col-md-6">
-        <div class="reference reference--blue reference--home ptb-70">
-          <div class="container reference__wrapper flexbox">
-            <div class="reference__icon" style="background-image: url('assets/1_home/faq.png');"></div>
-            <h2 class="text-white">Co warto <br>wiedzieć?</h2>
-            <a href="reference.html" class="btn">Przydatne informacje</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="map map--home"></div>
-      </div>
-    </div>
-
-    <section class="adventage text-white ptb-70">
-      <div class="container">
-        <h2 class="text-center">Dlaczego my?</h2>
-        <div class="row mtb-70 stretchbox-xs">
-          <div class="col-xs-6 col-md-3 adventage__item text-center">
-            <div class="adventage__icon" style="background-image: url('assets/1_home/cena.png');"></div>
+      <div class="about" style="background-image: url('assets/1_home/intro.png');">
+         <div class="container">
             <p>
-              Najniższe ceny na rynku!
+               LeLe Crossmedia Productions is one of the first and youngest partnerships in Poland, <br>
+               incorporating international points of view, endeavors, passions, and love <br>
+               for the art of cinema, photography and animation; for the opportunities <br>
+               and possibilities of cross media projects. We are pride in our unity <br>
+               and teamwork in accomplishing our mission.
             </p>
-          </div>
-          <div class="col-xs-6 col-md-3 adventage__item text-center">
-            <div class="adventage__icon" style="background-image: url('assets/1_home/transport.png');"></div>
-            <p>
-              Bezpłatny transfer pod terminal w obie strony
-            </p>
-          </div>
-          <div class="col-xs-6 col-md-3 adventage__item text-center">
-            <div class="adventage__icon" style="background-image: url('assets/1_home/ochrona.png');"></div>
-            <p>
-              Auto dozorowane pod stałą ochroną 24h
-            </p>
-          </div>
-          <div class="col-xs-6 col-md-3 adventage__item text-center">
-            <div class="adventage__icon" style="background-image: url('assets/1_home/nonstop.png');"></div>
-            <p>
-              Czynny 24h, 7 dni w tygodniu
-            </p>
-          </div>
-          <div class="col-xs-6 col-md-3 adventage__item text-center">
-            <div class="adventage__icon" style="background-image: url('assets/1_home/rezerwacja.png');"></div>
-            <p>
-              Możliwość rezerwacji miejsc postojowych
-            </p>
-          </div>
-          <div class="col-xs-6 col-md-3 adventage__item text-center">
-            <div class="adventage__icon" style="background-image: url('assets/1_home/monitoring.png');"></div>
-            <p>
-              System monitoringu wizyjnego
-            </p>
-          </div>
-          <div class="col-xs-6 col-md-3 adventage__item text-center">
-            <div class="adventage__icon" style="background-image: url('assets/1_home/oswietlenie.png');"></div>
-            <p>
-              Profesjonalne oświetlenie
-            </p>
-          </div>
-          <div class="col-xs-6 col-md-3 adventage__item text-center">
-            <div class="adventage__icon" style="background-image: url('assets/1_home/dojazd.png');"></div>
-            <p>
-              Dogodny dojazd do parkingu
-            </p>
-          </div>
-        </div>
-        <div class="text-center">
-          <a href="about.html" class="btn">Sprawdź</a>
-        </div>
+            <a href="about.html" class="btn">Read more</a>
+         </div>
       </div>
-    </section>
 
-    <section class="section section--gray section--gray-left mtb-70">
-      <div class="container row">
-        <div class="col-md-6 section__col-6 section__gray-box">
-          <img src="assets/1_home/about.jpg" alt="" class="image">
-        </div>
-        <div class="col-md-6 section__col-6">
-          <h2>Parking <span style="color: #009fe3;">Uśmiechu</span></h2>
-          <p class="text-justify">
-            Parking Uśmiechu mieści się 1000m od terminala Międzynarodowego Portu Lotniczego w podkrakowskich Balicach. Oferujemy 120 miejsc parkingowych na utwardzonym terenie. Parking jest ubezpieczony, dozorowany 24/7, ogrodzony oraz oświetlony.
-          </p>
-          <p class="text-justify">
-            Zapewniamy transfer własnym busem na lotnisko i odbiór po powrocie z podróży. Transfery trwają max 3min., realizujemy je na bieżąco i są wliczone w cenę usługi.
-          </p>
-          <div class="text-right">
-            <a href="about.html" class="btn">Czytaj dalej</a>
-          </div>
-        </div>
-      </div>
-    </section>
+      <section class="latest">
+         <h2 class="text-center mtb-80">Latest productions</h2>
+         <div class="dark-bg ptb-80">
+            <div class="container">
+               <section class="latest__item">
+                  <div class="row">
+                     <div class="col-md-8">
+                        <img src="assets/1_home/latest_03.jpg" alt="" class="image">
+                     </div>
+                     <div class="col-md-4">
+                        <h3>Searching for Devo</h3>
+                        <p>
 
-    <footer class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-7 row">
-            <div class="col-sm-6">
-              <div class="footer__logo">
-                <img src="images/logo_white.png" alt="">
-              </div>
-              <div class="footer__icon" style="background-image: url(images/pin.png);">
-                ul. Uśmiechu 1 <br>
-                32-083 Balice
-              </div>
+                        </p>
+                     </div>
+                  </div>
+
+                  <div class="row">
+                     <div class="col-md-5">
+                        <img src="assets/1_home/latest_08.jpg" alt="" class="image">
+                     </div>
+                     <div class="col-md-3">
+                        <p>
+
+                        </p>
+                     </div>
+                     <div class="col-md-4">
+                        <img src="assets/1_home/latest_06.jpg" alt="" class="image">
+                     </div>
+                  </div>
+               </section>
+
+               <section class="latest__item">
+                  <div class="row">
+                     <div class="col-md-4">
+                        <h3>Skate Boat</h3>
+                        <p>
+
+                        </p>
+                     </div>
+                     <div class="col-md-8">
+                        <img src="assets/1_home/latest2_03.jpg" alt="" class="image">
+                     </div>
+                  </div>
+
+                  <div class="row">
+                     <div class="col-md-4">
+                        <img src="assets/1_home/latest2_06.jpg" alt="" class="image">
+                     </div>
+                     <div class="col-md-3">
+                        <p>
+
+                        </p>
+                     </div>
+                     <div class="col-md-5">
+                        <img src="assets/1_home/latest2_09.jpg" alt="" class="image">
+                     </div>
+                  </div>
+               </section>
+
+               <div class="text-center">
+                  <a href="latest.html" class="btn latest__btn">Zobacz więcej produkcji</a>
+               </div>
             </div>
-            <div class="col-sm-6">
-              <div class="footer__icon" style="background-image: url(images/phone.png);">
-                +48 666 555 444
-              </div>
-              <div class="footer__icon" style="background-image: url(images/mail.png);">
-                parking@uśmiechu.pl
-              </div>
-              <div class="footer__icon" style="background-image: url(images/place.png);">
-                500351.1"N 194801.0"E
-              </div>
-            </div>
-          </div>
-          <div class="col-md-5">
-            <div class="footer__map">
+         </div>
+      </section>
 
-            </div>
-          </div>
-        </div>
+      <section class="mtb-80">
+         <div class="container">
+            <h2 class="text-center mtb-80">O Lele</h2>
 
-        <div class="credits text-right">
-          Wszelkie prawa zastrzeżone - Parking Uśmiechu
-          <div class="credits__blue">
-            <a href="">
-              <img src="images/roman.png" alt="Maciej Roman" class="credits__author">
-            </a>
-          </div>
-        </div>
-      </div>
-    </footer>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-  <script src="js/main.js"></script>
-  </body>
+            <div class="row">
+               <div class="col-md-6">
+                  <img src="assets/1_home/about_03.jpg" alt="">
+               </div>
+               <div class="col-md-6">
+
+               </div>
+            </div>
+
+            <div class="about__img-wrapper">
+               <img src="assets/1_home/about_08.jpg" alt="" class="about__img">
+               <img src="assets/1_home/about_06.jpg" alt="" class="about__img">
+               <img src="assets/1_home/about_10.jpg" alt="" class="about__img">
+            </div>
+         </div>
+      </section>
+
+      <footer class="footer dark-bg">
+         <div class="container row flexbox">
+            <div class="col-md-4">
+               <img src="images/logo_horizontal.png" alt="">
+            </div>
+            <div class="col-md-4 text-center">
+               <p>
+                  +48 535 124 887 <br>
+                  lelecrossmedia@gmail.com
+               </p>
+               <p>
+                  zobacz również:
+                  <strong>
+                     <a href="http://www.lelefactory.blogspot.pl">www.lelefactory.blogspot.pl</a>
+                  </strong>
+               </p>
+            </div>
+
+            <div class="col-md-4 text-right">
+               <a href="">
+                  <span class="social-icon social-icon--fb"></span>
+               </a>
+               <a href="">
+                  <span class="social-icon social-icon--inst"></span>
+               </a>
+            </div>
+         </div>
+
+         <div class="credits text-right">
+            <div class="container">
+               <span class="credits__text">All rights reserved - Lele Crossmedia Production 2017</span>
+               <a href="">
+                  <img src="images/roman.png" alt="Maciej Roman">
+               </a>
+            </div>
+         </div>
+      </footer>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+      <!-- <script src="js/main.js"></script> -->
+      <script src="https://use.typekit.net/bwf6gqt.js"></script>
+      <script>try{Typekit.load({ async: true });}catch(e){}</script>
+   </body>
 </html>

@@ -1,22 +1,27 @@
 .about{
+   padding-top: 150px;
+   height: 100vh;
+   background: center bottom no-repeat;
+   box-sizing: border-box;
 
-  &__row{
-    margin: 40px 0;
-  }
-}
+   &__img-wrapper{
+      position: relative;
+      height: 718px;
+   }
 
-.adventage{
-  background-color: $blueDark;
-
-  &__item{
-    padding: 0 30px;
-    font-size: 16px;
-  }
-
-  &__icon{
-    margin: 20px auto;
-    width: 112px;
-    height: 90px;
-    background: no-repeat center;
-  }
+   &__img{
+      position: absolute;
+      &:nth-child(1){
+         left: 0;
+         top: 110px;
+      }
+      &:nth-child(2){
+         left: 550px;
+         top: 0;
+      }
+      &:nth-child(3){
+         left: 449px;
+         top: 400px;
+      }
+   }
 }

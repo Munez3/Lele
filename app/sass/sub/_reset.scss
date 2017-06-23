@@ -1,8 +1,6 @@
 body{
-  font-family: $proxima;
   font-weight: 400;
   font-size: 14px;
-  color: $blueDark;
 }
 
 h1,h2{
@@ -10,18 +8,13 @@ h1,h2{
 }
 
 h1{
-  font-size: 30px;
-  font-family: $proxima;
-  @include media($breakpointMd){
-    font-size: 40px;
-  }
-  @include media($breakpointLg){
-    font-size: 60px;
-  }
+   font-size: 26px;
+
 }
 
 h2{
   font-size: 26px;
+  color: $gray;
   @include media($breakpointMd){
     font-size: 36px;
   }
@@ -69,14 +62,11 @@ input, textarea{
   padding: 14px 10px;
   display: block;
   width: 100%;
-  border: 3px solid $blue;
   border-radius: 6px;
   box-sizing: border-box;
-  font-family: $proxima;
 
   &:focus{
     outline: 0;
-    border-color: $blueDark;
   }
 }
 

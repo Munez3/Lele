@@ -9,12 +9,9 @@
  $breakpointLg: 1200px;
  $breakpointXl: 1500px;
 
- $blue: #009fe3;
- $blueDark: #2b364b;
- $red: #ff5050;
- $gray: #e1e1e1;
+ $gray: #cecece;
+ $dark: #121618;
 
- $proxima: "proxima-nova",sans-serif;
 
 
  @mixin media($width){
@@ -29,15 +26,9 @@
  @import 'sub/layout';
  @import 'sub/universal';
  @import 'sub/header';
- @import 'sub/slider';
- @import 'sub/form';
- @import 'sub/price';
  @import 'sub/about';
- @import 'sub/faq';
- @import 'sub/place';
- @import 'sub/contact';
+ @import 'sub/latest';
  @import 'sub/footer';
- @import 'sub/reserve';
 
 
  div#__bs_notify__{display: none !important;}

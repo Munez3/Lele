@@ -1,170 +1,61 @@
 .header{
-  position: fixed;
-  left: 0;
-  top: 0;
-  padding: 10px 0;
-  width: 100%;
-  background-color: #fff;
-  border-bottom: 1px solid $blue;
-  z-index: 9999;
-  @include media($breakpointMd){
-    position: static;
-    padding: 20px 0;
-  }
+   height: 100vh;
+   background: center /cover no-repeat;
+
+   &__slogan{
+      width: 146px;
+   }
+
+   &__small-text{
+      font-size: 20px;
+   }
 }
 
-.logo{
-  float: left;
-  width: 130px;
-  @include media($breakpointMd){
-    width: auto;
-  }
-}
-
-.burger{
-  float: right;
-  margin-top: 6px;
-  width: 20px;
-  height: 30px;
-  transition: 200ms ease-out;
-  &__bar{
-    position: relative;
-    margin-top: 14px;
-    width: 100%;
-    height: 2px;
-    background-color: $blueDark;
-    transition: 300ms;
-    &:before, &:after{
-      content: '';
-      position: absolute;
-      width: 100%;
-      height: 2px;
-      background-color: $blueDark;
-      transition: 300ms;
-    }
-    &:before{
-      top: -5px;
-    }
-    &:after{
-      bottom: -5px;
-    }
-
-  }
-
-  &--active{
-    transform: rotate(-90deg);
-  }
-
-  &--active &__bar{
-    background-color: $blue;
-    &:before, &:after{
-      background-color: $blue;
-    }
-  }
-  @include media($breakpointMd){
-    display: none;
-  }
-}
 
 .navbar{
-  position: fixed;
-  top: 62px;
-  left: 0;
-  width: 100%;
-  background-color: $blueDark;
-  transform: translateX(-100%);
-  transition: 300ms;
+   position: absolute;
+   padding: 30px 0;
+   width: 100%;
+   background-color: #fff; 
 
-  &--active{
-    transform: translateX(0);
-  }
+   &__container{
+      position: relative;
+      padding: 28px 0;
+   }
 
-  @include media($breakpointMd){
-    position: absolute;
-    top: auto;
-    transform: translateX(0);
-    &--fixed{
-      position: fixed;
+   &__logo{
+      position: absolute;
       top: 0;
-      left: 0;
-      z-index: 999;
-    }
-  }
+      left: 50%;
+      transform: translateX(-50%);
+   }
 }
 
 .nav{
-  li{
 
-  }
-
-  a{
-    padding: 20px 0;
-    display: inline-block;
-    color: #fff;
-    font-size: 16px;
-    text-transform: uppercase;
-  }
-  @include media($breakpointMd){
-    li{
+   &--left{
       float: left;
-      padding: 0 30px;
-    }
-  }
-}
+   }
+   &--right{
+      float: right;
+   }
 
-.meta{
-  display: none;
-  @include media($breakpointMd){
-    float: right;
-    display: block;
-  }
+   li{
+      float: left;
+      margin-right: 40px;
+      &:nth-child(4){
 
-  &__info{
-    clear: both;
-    margin-top: 40px;
-  }
+      }
+   }
 
-  &__info-item{
-    float: left;
-    margin-left: 30px;
-    height: 28px;
-    font-size: 20px;
-  }
-
-  &__info-icon{
-    display: inline-block;
-    width: 28px;
-    height: 28px;
-    background: no-repeat center;
-    vertical-align: text-bottom;
-  }
+   a{
+      text-transform: uppercase;
+   }
 }
 
 .lang{
-  margin-top: 10px;
-  float: right;
-  li{
-    float: left;
-    padding: 0 15px;
-  }
-}
-
-
-.dot-between{
-  @include media($breakpointMd){
-    li{
-      position: relative;
-      &:not(:last-child):after{
-        content: '';
-        position: absolute;
-        right: 0;
-        top: 50%;
-        width: 4px;
-        height: 4px;
-        background-color: $blue;
-        border-radius: 50%;
-        transform: translate(50%, -50%);
-      }
-    }
-  }
+   position: absolute;
+   top: 50%;
+   right: 0;
+   transform: translateY(-50%);
 }
