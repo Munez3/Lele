@@ -2,9 +2,22 @@
 
    &__item{
       margin-bottom: 50px;
+      padding-bottom: 50px;
+      border-bottom: 1px solid $gray;
+      &:last-of-type{
+         padding-bottom: 0;
+         border-bottom: 0;
+      }
    }
 
-   &__btn{
-      text-decoration: underline;
+   &__pl-40{
+      padding-left: 40px;
+   }
+   &__pr-40{
+      padding-right: 40px;
+   }
+
+   &__flex-bot{
+      align-items: flex-end;
    }
 }

@@ -1,25 +1,21 @@
 body{
   font-weight: 400;
   font-size: 14px;
+  font-family: $metropolis;
 }
 
 h1,h2{
   font-weight: 700;
 }
 
-h1{
-   font-size: 26px;
-
-}
-
-h2{
+h1, h2{
   font-size: 26px;
   color: $gray;
   @include media($breakpointMd){
     font-size: 36px;
   }
   @include media($breakpointLg){
-    font-size: 48px;
+    font-size: 80px;
   }
 }
 
@@ -35,8 +31,9 @@ h3{
 
 h4{
   font-size: 18px;
+  font-weight: 600;
   @include media($breakpointLg){
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 
@@ -53,9 +50,10 @@ sup{
 p{
   margin: 1em 0;
   line-height: 1.5em;
-  @include media($breakpointLg){
-    font-size: 18px;
-  }
+}
+
+strong{
+   font-weight: 600;
 }
 
 input, textarea{

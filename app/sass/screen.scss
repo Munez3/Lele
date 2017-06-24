@@ -12,16 +12,16 @@
  $gray: #cecece;
  $dark: #121618;
 
+ $metropolis: 'metropolis', sans-serif;
 
-
- @mixin media($width){
-  @media screen and (min-width: $width){
-    @content;
-  }
- }
-
+@mixin media($width){
+   @media screen and (min-width: $width){
+      @content;
+   }
+}
 
  @import "compass/reset";
+ @import 'sub/font';
  @import 'sub/reset';
  @import 'sub/layout';
  @import 'sub/universal';

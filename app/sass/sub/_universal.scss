@@ -23,7 +23,28 @@
    }
 }
 
+.pl-40{
+   @include media($breakpointLg){
+      padding-left: 40px;
+   }
+}
+.pr-40{
+   @include media($breakpointLg){
+      padding-right: 40px;
+   }
+}
+.pt-130{
+   @include media($breakpointLg){
+      padding-top: 130px;
+   }
+}
+
 .dark-bg{
    background-color: $dark;
    color: #fff;
+}
+
+.btn{
+   text-transform: uppercase;
+   &--underline{text-decoration: underline;}
 }

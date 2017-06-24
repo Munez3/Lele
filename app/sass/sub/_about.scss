@@ -25,3 +25,22 @@
       }
    }
 }
+
+
+.staff{
+
+   p{
+      font-weight: 300;
+   }
+
+   &__col{
+      margin-bottom: 30px;
+      @include media($breakpointMd){
+         margin-right: 30px;
+         width: calc(50% - 15px);
+         &:nth-child(2n){
+            margin-right: 0;
+         }
+      }
+   }
+}
