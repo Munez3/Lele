@@ -1,23 +1,39 @@
 .latest{
 
    &__item{
-      margin-bottom: 50px;
-      padding-bottom: 50px;
+      margin-bottom: 30px;
+      padding-bottom: 30px;
       border-bottom: 1px solid $gray;
       &:last-of-type{
          padding-bottom: 0;
          border-bottom: 0;
       }
-   }
-
-   &__pl-40{
-      padding-left: 40px;
-   }
-   &__pr-40{
-      padding-right: 40px;
+      @include media($breakpointLg){
+         margin-bottom: 50px;
+         padding-bottom: 50px;
+      }
    }
 
    &__flex-bot{
       align-items: flex-end;
+   }
+
+   &__list-item{
+      line-height: 1.5em;
+      font-size: 20px;
+   }
+
+   &__logo{
+      margin: 10px;
+      @include media($breakpointMd){
+         margin: 0 10px;
+      }
+   }
+
+   &__lg-show{
+      display: none;
+      @include media($breakpointLg){
+         display: flex;
+      }
    }
 }

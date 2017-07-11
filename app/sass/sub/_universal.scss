@@ -1,3 +1,8 @@
+.moved{
+   margin-top: -100vh;
+   transition: 500ms;
+}
+
 .mtb-80{
    margin-top: 30px;
    margin-bottom: 30px;
@@ -24,18 +29,25 @@
 }
 
 .pl-40{
-   @include media($breakpointLg){
+   @include media($breakpointMd){
       padding-left: 40px;
    }
 }
 .pr-40{
-   @include media($breakpointLg){
+   @include media($breakpointMd){
       padding-right: 40px;
    }
 }
 .pt-130{
    @include media($breakpointLg){
       padding-top: 130px;
+   }
+}
+
+.mobile-space{
+   padding-top: 40px;
+   @include media($breakpointMd){
+      padding-top: 0;
    }
 }
 
@@ -47,4 +59,43 @@
 .btn{
    text-transform: uppercase;
    &--underline{text-decoration: underline;}
+}
+
+.two-col{
+   @include media($breakpointMd){
+      columns: 2;
+   }
+}
+
+.slick-wrapper{
+   position: relative;
+}
+
+.slick__item{
+   padding: 0 10px;
+   height: 180px !important;
+   box-sizing: border-box;
+}
+
+.slick-arrow{
+   display: none;
+   @include media($breakpointLg){
+      display: block;
+      position: absolute;
+      top: 50%;
+      width: 15px;
+      height: 15px;
+      &--prev{
+         left: -20px;
+         border-left: 3px solid $gray;
+         border-bottom: 3px solid $gray;
+         transform: translateY(-50%) rotate(45deg);
+      }
+      &--next{
+         right: -20px;
+         border-right: 3px solid $gray;
+         border-bottom: 3px solid $gray;
+         transform: translateY(-50%) rotate(-45deg);
+      }
+   }
 }

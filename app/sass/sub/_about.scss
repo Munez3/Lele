@@ -1,27 +1,41 @@
 .about{
-   padding-top: 150px;
-   height: 650px;
-   background: center bottom no-repeat;
+   margin: 30px 0;
    box-sizing: border-box;
+   @include media($breakpointMd){
+      padding-top: 150px;
+      height: 650px;
+      background: center bottom no-repeat;
+   }
+
+   br{
+      display: none;
+      @include media($breakpointMd){
+         display: inline;
+      }
+   }
 
    &__img-wrapper{
-      position: relative;
-      height: 718px;
+      @include media($breakpointMd){
+         position: relative;
+         height: 718px;
+      }
    }
 
    &__img{
-      position: absolute;
-      &:nth-child(1){
-         left: 0;
-         top: 110px;
-      }
-      &:nth-child(2){
-         left: 550px;
-         top: 0;
-      }
-      &:nth-child(3){
-         left: 449px;
-         top: 400px;
+      @include media($breakpointMd){
+         position: absolute;
+         &:nth-child(1){
+            left: 0;
+            top: 110px;
+         }
+         &:nth-child(2){
+            left: 50%;
+            top: 0;
+         }
+         &:nth-child(3){
+            left: 449px;
+            top: 400px;
+         }
       }
    }
 }
@@ -41,6 +55,15 @@
          &:nth-child(2n){
             margin-right: 0;
          }
+      }
+   }
+
+   &__img-wrapper{
+      margin-bottom: 15px;
+      height: 200px;
+      @include media($breakpointXs){
+         margin: 0;
+         padding-right: 15px;
       }
    }
 }

@@ -1,0 +1,13 @@
+.form{
+   margin: 0 auto;
+   @include media($breakpointLg){
+      width: 80%;
+   }
+   @include media($breakpointXl){
+      width: 60%;
+   }
+
+   &__col{
+      padding: 0 7px;
+   }
+}

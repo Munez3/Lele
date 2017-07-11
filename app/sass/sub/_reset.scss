@@ -57,20 +57,23 @@ strong{
 }
 
 input, textarea{
+   margin-bottom: 15px;
   padding: 14px 10px;
   display: block;
   width: 100%;
-  border-radius: 6px;
+  border: 1px solid $gray;
   box-sizing: border-box;
 
   &:focus{
     outline: 0;
+    box-shadow: 0 0 5px 0 $gray;
   }
 }
 
 textarea{
   height: 140px;
   resize: none;
+  font-family: $metropolis;
 }
 label{
   font-size: 20px;
